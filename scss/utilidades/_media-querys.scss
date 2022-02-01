@@ -1,6 +1,8 @@
-/*-----------MEDIA QUERYS------------*/
+$mobile: 'max-width: 526px';
+$desktop: 'min-width: 527px';
+
 /*si como min es de 527px*/
-@media (min-width: 527px) {
+@media ($desktop) {
     /*HOME*/
         .section_title h1{
             font-size: 1.8rem;
@@ -30,60 +32,58 @@
     }
     
     
-    /*Si como max es de 526px*/
-    @media (max-width: 526px){
-        .container {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-            grid-template-rows: 0.2fr auto auto auto;
-            gap: 0px 0px;
-            grid-auto-flow: row;
-            grid-template-areas:
-                "header header header header header"
-                "main main main main main"
-                "section section section section section"
-                "footer footer footer footer footer";
-        }
-        .header { grid-area: header; }
-        .main { grid-area: main; }
-        .section { grid-area: section; }
-        .footer { grid-area: footer; }
-    
-        /*HOME*/
-        .nav a{
-            font-size: 1.1rem;
-        }
-        main .main{
-            height: 0px;
-        }
+/*Si como max es de 526px*/
+@media ($mobile){
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 0.2fr auto auto auto;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "header header header header header"
+            "main main main main main"
+            "section section section section section"
+            "footer footer footer footer footer";
+    }
+    .header { grid-area: header; }
+    .main { grid-area: main; }
+    .section { grid-area: section; }
+    .footer { grid-area: footer; }
+
+    /*HOME*/
+    .nav a{
+        font-size: 1.1rem;
+    }
+    .main{
         .main_ultimoPodcast{
-            width: 300px;
-            height: 100px;
-        }
-        .main_ultimoPodcast--portada1{
-            width: 80px;
-            height: 80px;
-        }
-        .main_ultimoPodcast--info{
-            width: 10px;
-            height: 80px;
-        }
-        .main_ultimoPodcast--info span{
-            font-size: 0.9rem;
-        }
-        .main_ultimoPodcast--playButtonBox{
-            width: 80px;
-            height: 80px;
-        }
-        .main_ultimoPodcast--playButton{
-            width: 50px;
-            height: 50px;
-        }
-    
-    /*COMO ESCUCHARNOS*/
-    .main_title h1{
-        color:$color-texto;
-        font-size: 2.5rem;
+            width: 30rem;
+            height: 10rem;
+            .main_ultimoPodcast--portada1{
+                width: 80px;
+                height: 80px;
+            }
+            .main_ultimoPodcast--info{
+                width: 10px;
+                height: 80px;
+                span{
+                    font-size: 0.9rem;
+                }
+            }
+            .main_ultimoPodcast--playButtonBox{
+                width: 80px;
+                height: 80px;
+                .main_ultimoPodcast--playButton{
+                    width: 50px;
+                    height: 50px;
+                }
+            }
         }
     }
-    
+}
+/*COMO ESCUCHARNOS*/
+.main_title h1{
+    color:$color-texto;
+    font-size: 2.5rem;
+}
+

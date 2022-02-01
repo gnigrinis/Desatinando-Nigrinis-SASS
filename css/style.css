@@ -89,6 +89,34 @@ header {
     border-radius: 1rem;
     box-shadow: #fff954 0px 0px 10px;
     animation: main_ultimoPodcast 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) both; }
+    .main .main_ultimoPodcast .main_ultimoPodcast--portada1 {
+      width: 13.8rem;
+      height: 13.8rem;
+      border-radius: 1rem;
+      background-image: url(https://dummyimage.com/138x138/000/fff); }
+    .main .main_ultimoPodcast .main_ultimoPodcast--info {
+      background-color: #F0A018;
+      display: flex;
+      flex-direction: column;
+      width: 18rem;
+      height: 13.8rem;
+      justify-content: space-between;
+      align-items: flex-start; }
+      .main .main_ultimoPodcast .main_ultimoPodcast--info span {
+        background-color: #F0A018;
+        margin-left: 1rem;
+        font-size: 1.6rem;
+        color: #fff;
+        width: 16rem; }
+    .main .main_ultimoPodcast .main_ultimoPodcast--playButtonBox {
+      background-color: #F0A018;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .main .main_ultimoPodcast .main_ultimoPodcast--playButtonBox .main_ultimoPodcast--playButton {
+        background-color: #F0A018;
+        width: 6.4rem;
+        pointer-events: none; }
 
 @keyframes main_ultimoPodcast {
   0% {
@@ -97,34 +125,6 @@ header {
   100% {
     box-shadow: 1px 1px #3e3e3e, 2px 2px #3e3e3e, 3px 3px #3e3e3e, 4px 4px #3e3e3e, 5px 5px #3e3e3e, 6px 6px #3e3e3e, 7px 7px #3e3e3e, 8px 8px #3e3e3e;
     transform: translateX(-8px) translateY(-8px); } }
-  .main .main_ultimoPodcast--portada1 {
-    width: 13.8rem;
-    height: 13.8rem;
-    border-radius: 1rem;
-    background-image: url(https://dummyimage.com/138x138/000/fff); }
-  .main .main_ultimoPodcast--info {
-    background-color: #F0A018;
-    display: flex;
-    flex-direction: column;
-    width: 18rem;
-    height: 13.8rem;
-    justify-content: space-between;
-    align-items: flex-start; }
-    .main .main_ultimoPodcast--info span {
-      background-color: #F0A018;
-      margin-left: 1rem;
-      font-size: 1.6rem;
-      color: #fff;
-      width: 16rem; }
-  .main .main_ultimoPodcast--playButtonBox {
-    background-color: #F0A018;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    .main .main_ultimoPodcast--playButtonBox .main_ultimoPodcast--playButton {
-      background-color: #F0A018;
-      width: 6.4rem;
-      pointer-events: none; }
 
 .section_title {
   background-color: #172a43;
@@ -343,7 +343,6 @@ header {
         height: 3rem;
         margin: 1rem; }
 
-/*-----------MEDIA QUERYS------------*/
 /*si como min es de 527px*/
 @media (min-width: 527px) {
   /*HOME*/
@@ -389,26 +388,25 @@ header {
   /*HOME*/
   .nav a {
     font-size: 1.1rem; }
-  main .main {
-    height: 0px; }
-  .main_ultimoPodcast {
-    width: 300px;
-    height: 100px; }
-  .main_ultimoPodcast--portada1 {
-    width: 80px;
-    height: 80px; }
-  .main_ultimoPodcast--info {
-    width: 10px;
-    height: 80px; }
-  .main_ultimoPodcast--info span {
-    font-size: 0.9rem; }
-  .main_ultimoPodcast--playButtonBox {
-    width: 80px;
-    height: 80px; }
-  .main_ultimoPodcast--playButton {
-    width: 50px;
-    height: 50px; }
-  /*COMO ESCUCHARNOS*/
-  .main_title h1 {
-    color: #fff954;
-    font-size: 2.5rem; } }
+  .main .main_ultimoPodcast {
+    width: 30rem;
+    height: 10rem; }
+    .main .main_ultimoPodcast .main_ultimoPodcast--portada1 {
+      width: 80px;
+      height: 80px; }
+    .main .main_ultimoPodcast .main_ultimoPodcast--info {
+      width: 10px;
+      height: 80px; }
+      .main .main_ultimoPodcast .main_ultimoPodcast--info span {
+        font-size: 0.9rem; }
+    .main .main_ultimoPodcast .main_ultimoPodcast--playButtonBox {
+      width: 80px;
+      height: 80px; }
+      .main .main_ultimoPodcast .main_ultimoPodcast--playButtonBox .main_ultimoPodcast--playButton {
+        width: 50px;
+        height: 50px; } }
+
+/*COMO ESCUCHARNOS*/
+.main_title h1 {
+  color: #fff954;
+  font-size: 2.5rem; }
