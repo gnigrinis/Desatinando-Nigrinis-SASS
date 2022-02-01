@@ -1,0 +1,9 @@
+.main_title--alternative h1{
+    background-color: $color-primario;
+    color:$color-texto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+    font-size: 2.5rem;
+}

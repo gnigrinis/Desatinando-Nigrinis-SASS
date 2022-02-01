@@ -1,0 +1,50 @@
+header{
+    background-color: $color-primario;
+    display: flex;
+    flex-direction: column;
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: right;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        border-radius: 10px;
+        }
+        ul{
+            margin: 2rem;
+            li{
+                display: inline;
+                padding-left:3px;
+                padding-right:3px;
+            }
+            a{
+                color:$color-texto;
+                text-decoration: none;
+                font-size: 1.6rem;
+                text-shadow: 5px 5px 10px $color-texto;
+            }
+        }
+    .banner{
+        display: block;
+        margin: 0;
+        width: 100vw;
+        height: fit-content;
+        animation: banner 1s ease 0s 1 normal forwards;
+    }
+    /*Animación de Banner SIDE IN*/
+    @keyframes banner {
+        0% {
+            opacity: 0;
+            transform: translateX(-250px);
+        }
+    
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+}
+
+

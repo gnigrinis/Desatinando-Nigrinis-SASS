@@ -1,0 +1,21 @@
+//Variables
+@import './utilidades/colores';
+
+//Ajustes Globales
+@import './utilidades/ajustes-globales';
+
+//Grid
+@import './utilidades/grid';
+
+//Secciones
+@import './secciones/header';
+@import './secciones/index';
+@import './secciones/como-escucharnos';
+@import './secciones/blog';
+@import './secciones/otros-podcast';
+@import './secciones/contacto';
+@import './secciones/en-construccion';
+@import './secciones/footer';
+
+//Media Querys
+@import './utilidades/media-querys';

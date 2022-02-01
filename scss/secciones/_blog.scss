@@ -1,0 +1,27 @@
+.header{
+    height: fit-content;
+}
+.main{
+    height: fit-content;
+    .main_title--article{
+        border: $color-secundario solid 1px;
+        margin: 0.5rem;
+        h2{
+            color: $color-texto;
+            padding-top: 1rem;
+            padding-left: 1rem;
+            font-size: 1.8rem;
+        }
+        span{
+            color: $color-texto-secundario;
+            padding-left: 2rem;
+            font-size: 1.4rem;
+        }
+        p{
+            color: $color-texto-secundario;
+            margin: 0.5rem;
+            padding: 1rem;
+            font-size: 1.6rem;
+        }
+    }
+}
