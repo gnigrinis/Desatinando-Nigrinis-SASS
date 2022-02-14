@@ -9,6 +9,11 @@ html {
   font-family: 'Roboto', sans-serif;
   background-color: #172a43; }
 
+.footer .footer_contenedor .footer_contenedor--iconos .icono_github, .footer .footer_contenedor .footer_contenedor--iconos .icono_linkedin {
+  width: 3rem;
+  height: 3rem;
+  margin: 1rem; }
+
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -58,7 +63,6 @@ header {
     display: block;
     margin: 0;
     width: 100vw;
-    height: fit-content;
     animation: banner 1s ease 0s 1 normal forwards; }
 
 @keyframes banner {
@@ -76,7 +80,6 @@ header {
   background-color: #172a43;
   flex-direction: column;
   flex-wrap: wrap;
-  height: fit-content;
   /*Animacion de portadas SHADOW POP*/ }
   .main .main_ultimoPodcast {
     background-color: #F0A018;
@@ -92,8 +95,7 @@ header {
     .main .main_ultimoPodcast .main_ultimoPodcast--portada1 {
       width: 13.8rem;
       height: 13.8rem;
-      border-radius: 1rem;
-      background-image: url(https://dummyimage.com/138x138/000/fff); }
+      border-radius: 1rem; }
     .main .main_ultimoPodcast .main_ultimoPodcast--info {
       background-color: #F0A018;
       display: flex;
@@ -126,31 +128,31 @@ header {
     box-shadow: 1px 1px #3e3e3e, 2px 2px #3e3e3e, 3px 3px #3e3e3e, 4px 4px #3e3e3e, 5px 5px #3e3e3e, 6px 6px #3e3e3e, 7px 7px #3e3e3e, 8px 8px #3e3e3e;
     transform: translateX(-8px) translateY(-8px); } }
 
-.section_title {
+main .section_title {
   background-color: #172a43;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column; }
-  .section_title h1 {
+  main .section_title h1 {
     background-color: #172a43;
     color: #fff954;
     padding: 3rem 0rem 0rem 1rem;
     font-size: 2.5rem; }
-  .section_title h2 {
+  main .section_title h2 {
     background-color: #172a43;
     color: #fff;
     padding: 0.5rem 0rem 1rem 1rem;
     font-size: 1.6rem; }
 
-.section_portadas {
+main .section_portadas {
   background-color: #172a43;
   display: flex;
   justify-content: space-evenly;
   padding: 1rem;
   flex-wrap: wrap;
   /*Animacion de portadas SHADOW POP*/ }
-  .section_portadas .section_portadas--podcastPortada {
+  main .section_portadas .section_portadas--podcastPortada {
     background-color: #F0A018;
     display: flex;
     flex-direction: column;
@@ -170,25 +172,16 @@ header {
   100% {
     box-shadow: 1px 1px #3e3e3e, 2px 2px #3e3e3e, 3px 3px #3e3e3e, 4px 4px #3e3e3e, 5px 5px #3e3e3e, 6px 6px #3e3e3e, 7px 7px #3e3e3e, 8px 8px #3e3e3e;
     transform: translateX(-8px) translateY(-8px); } }
-  .section_portadas .section_ultimoPodcast--portadas {
+  main .section_portadas .section_ultimoPodcast--portadas {
     width: 13.8rem;
-    height: 13.8rem;
-    background-image: url(https://dummyimage.com/138x138/000/fff); }
-  .section_portadas .section_portadas--podcastPortada span, .section_portadas a {
+    height: 12.6rem; }
+  main .section_portadas .section_portadas--podcastPortada span, main .section_portadas a {
     color: #fff;
     font-size: 1.2rem;
     text-decoration: none; }
 
-.main .main_title h1 {
-  color: #fff954;
-  padding: 3rem 0rem 0rem 1rem;
-  font-size: 2.5rem; }
-
 .main .main_title h2 {
-  background-color: #172a43;
-  color: #fff;
-  padding: 0.5rem 0rem 1rem 1rem;
-  font-size: 1.6rem; }
+  color: #fff; }
 
 .main .main_redes {
   display: flex;
@@ -199,28 +192,23 @@ header {
   width: 5rem;
   margin-bottom: 2rem; }
 
-.header {
-  height: fit-content; }
-
-.main {
-  height: fit-content; }
-  .main .main_title--article {
-    border: #F0A018 solid 1px;
-    margin: 0.5rem; }
-    .main .main_title--article h2 {
-      color: #fff954;
-      padding-top: 1rem;
-      padding-left: 1rem;
-      font-size: 1.8rem; }
-    .main .main_title--article span {
-      color: #fff;
-      padding-left: 2rem;
-      font-size: 1.4rem; }
-    .main .main_title--article p {
-      color: #fff;
-      margin: 0.5rem;
-      padding: 1rem;
-      font-size: 1.6rem; }
+.main .main_title--article {
+  border: #F0A018 solid 1px;
+  margin: 0.5rem; }
+  .main .main_title--article h2 {
+    color: #fff954;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    font-size: 1.8rem; }
+  .main .main_title--article span {
+    color: #fff;
+    padding-left: 2rem;
+    font-size: 1.4rem; }
+  .main .main_title--article p {
+    color: #fff;
+    margin: 0.5rem;
+    padding: 1rem;
+    font-size: 1.6rem; }
 
 .main_title h1 {
   padding: 3rem 0rem 0rem 1rem; }
@@ -331,17 +319,6 @@ header {
       align-items: center;
       flex-direction: row;
       justify-content: center; }
-      .footer .footer_contenedor .footer_contenedor--iconos .icono_github {
-        background-image: url(../images/github.png);
-        background-size: cover;
-        width: 3rem;
-        height: 3rem; }
-      .footer .footer_contenedor .footer_contenedor--iconos .icono_linkedin {
-        background-image: url(../images/linkedin.png);
-        background-size: cover;
-        width: 3rem;
-        height: 3rem;
-        margin: 1rem; }
 
 /*si como min es de 527px*/
 @media (min-width: 527px) {
@@ -354,13 +331,11 @@ header {
     grid-template-rows: 0.2fr 0.1fr 0.2fr 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
-    grid-template-areas: "header header header header header" "main main main main main" "section section section section section" "footer footer footer footer footer"; }
+    grid-template-areas: "header header header header header" "main main main main main" "footer footer footer footer footer"; }
   .header {
     grid-area: header; }
   .main {
     grid-area: main; }
-  .section {
-    grid-area: section; }
   .footer {
     grid-area: footer; }
   /*COMO ESCUCHARNOS*/

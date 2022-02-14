@@ -1,15 +1,6 @@
 .main{
-    .main_title h1{
-        color:$color-texto;
-        padding: 3rem 0rem 0rem 1rem;
-        font-size: 2.5rem;
-
-    }
     .main_title h2{
-        background-color: $color-primario;
         color:$color-texto-secundario;
-        padding: 0.5rem 0rem 1rem 1rem;
-        font-size: 1.6rem;
     }
     .main_redes{
         display: flex;
