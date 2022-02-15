@@ -9,7 +9,7 @@ This page to be an example of using HTML to structure a page.
 - GRID
 - Flexbox
 - SASS
-
+- Bootstrap
 
 ### About creator
 
