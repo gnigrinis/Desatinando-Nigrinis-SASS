@@ -1,7 +1,9 @@
-$mobile: 'max-width: 526px';
-$desktop: 'min-width: 527px';
+$small-mobile: 'max-width: 379px'; 
+$mobile: 'max-width: 545px';
+$tablet: 'max-width: 653px';
+$desktop: 'min-width: 654px';
 
-/*si como min es de 527px*/
+/*si como min es de 654px*/
 @media ($desktop) {
     /*HOME*/
         .section_title h1{
@@ -29,9 +31,9 @@ $desktop: 'min-width: 527px';
         }
     }
     
-    
-/*Si como max es de 526px*/
-@media ($mobile){
+
+/*Si como max es de 653px*/
+@media ($tablet){
     .container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -51,7 +53,8 @@ $desktop: 'min-width: 527px';
 
     /*HOME*/
     .nav a{
-        font-size: 1.1rem;
+        font-size: 1.5rem;
+        padding: 0.2rem;
     }
     .main{
         .main_ultimoPodcast{
@@ -85,3 +88,20 @@ $desktop: 'min-width: 527px';
     font-size: 2.5rem;
 }
 
+/*Si como max es de 545px*/
+@media ($mobile){
+    /*HOME*/
+    .nav a{
+        font-size: 1rem;
+        padding: 0;
+    }
+}
+
+/*Si como max es de 379px*/
+@media ($small-mobile){
+    /*HOME*/
+    .nav a{
+        font-size: 0.7rem;
+        padding: 0;
+    }
+}
