@@ -48,19 +48,20 @@ header {
     padding: 0;
     margin: 0;
     border-radius: 10px; }
-  header div {
-    flex-direction: row; }
-    header div ul {
-      margin: 2rem; }
-      header div ul li {
-        display: inline;
-        padding-left: 3px;
-        padding-right: 3px; }
-      header div ul a {
-        color: #fff954;
-        text-decoration: none;
-        font-size: 1.6rem;
-        text-shadow: 5px 5px 10px #fff954; }
+    header nav div {
+      flex-direction: row; }
+      header nav div ul {
+        margin: 2rem; }
+        header nav div ul li {
+          display: inline;
+          padding-left: 3px;
+          padding-right: 3px; }
+        header nav div ul a {
+          color: #fff954;
+          text-decoration: none;
+          font-size: 1.6rem; }
+          header nav div ul a:hover {
+            text-shadow: 5px 5px 10px #fff954; }
   header .banner {
     display: block;
     margin: 0;
@@ -168,9 +169,8 @@ button:not(:disabled),
   background-color: transparent;
   border: 1px solid transparent;
   border-radius: 0.25rem; }
-
-.navbar-toggler:hover, .navbar-toggler:focus {
-  text-decoration: none; }
+  .navbar-toggler:hover, .navbar-toggler:focus {
+    text-decoration: none; }
 
 .navbar-toggler-icon {
   display: inline-block;
@@ -266,14 +266,12 @@ button:not(:disabled),
     box-shadow: #fff954 0px 0px 10px;
     animation: main_ultimoPodcast 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) both; }
     .main .main_ultimoPodcast .main_ultimoPodcast--portada1 {
-      width: 13.8rem;
       height: 13.8rem;
       border-radius: 1rem; }
     .main .main_ultimoPodcast .main_ultimoPodcast--info {
       background-color: #F0A018;
       display: flex;
       flex-direction: column;
-      width: 18rem;
       height: 13.8rem;
       justify-content: space-between;
       align-items: flex-start; }
@@ -476,7 +474,7 @@ main .section_portadas {
       width: 3rem;
       margin: 0.5rem 1rem;
       cursor: pointer; }
-    .footer .footer_contenedor .footer_contenedor div a img:hover {
+    .footer .footer_contenedor:hover {
       opacity: 0.5; }
     .footer .footer_contenedor .footer_contenedor--title {
       color: #fff;

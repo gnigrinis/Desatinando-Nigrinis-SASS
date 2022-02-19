@@ -17,7 +17,6 @@
         box-shadow: $color-texto 0px 0px 10px;
         animation: main_ultimoPodcast 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
         .main_ultimoPodcast--portada1{
-            width: 13.8rem;
             height: 13.8rem;
             border-radius: 1rem;
         }
@@ -25,7 +24,6 @@
             background-color: $color-secundario;
             display: flex;
             flex-direction: column;
-            width: 18rem;
             height: 13.8rem;
             justify-content: space-between;
             align-items: flex-start;
